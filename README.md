@@ -1,4 +1,4 @@
-DarkScraper — Dark Web Monitor
+# DarkScraper — Dark Web Monitor
 The second tool in this project monitors dark web forums (BreachForums, DarkForums, LeakBase, XSS.is, etc.) for posts about potential corporate data breaches. It connects through Tor, searches for your target companies, and alerts you when new threads mention database leaks, credential dumps, or data breaches involving organizations you're monitoring.
 What It Does
 
