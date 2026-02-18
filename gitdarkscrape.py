@@ -1,5 +1,5 @@
 """
-BreachWatch — Dark Web Monitor
+DarkScrape — Dark Web Monitor
 =======================================
 Monitors dark web forums (BreachForums, LeakBase, etc.) for potential
 corporate data breaches. Connects via Tor and searches for keywords
@@ -1051,16 +1051,16 @@ def main():
     # ── Banner ──
     if USE_RICH:
         console.print(Panel(
-            "[bold white]🔍 BreachWatch — Dark Web Breach Monitor[/]\n"
+            "[bold white]🔍 DarkScrape — Dark Web Monitor[/]\n"
             "[dim]Monitoring dark web forums for corporate data breaches[/]\n\n"
             f"[cyan]Mode:[/] {'Single scan' if args.once else 'Continuous monitor'}   "
             f"[cyan]Interval:[/] {args.interval}s   "
             f"[cyan]Pages:[/] {MAX_PAGES}",
-            title="[bold red]BreachWatch[/]",
+            title="[bold red]DarkScrape[/]",
             box=box.DOUBLE,
         ))
     else:
-        print_header("🔍 BreachWatch — Dark Web Breach Monitor")
+        print_header("🔍 DarkScrape — Dark Web Monitor")
 
     # ── Determine targets ──
     targets = args.targets if args.targets else WATCH_TARGETS
